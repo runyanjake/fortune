@@ -6,18 +6,27 @@ Uses https://pypi.org/project/chatgptpy/ to communicate with a locally hosted LL
 ## First Time Setup
 
 `sudo apt-get install python3.11`
+
 `sudo apt install python3.11-venv`
+
 `python3.11 -m venv env`
+
 `pip install django`
+
 `pip install chatgptpy`
 
 `source env/bin/activate && cd fortune`
+
 `django-admin startproject fortune`
+
 `python manage.py migrate`
 
 Add to fortune/settings.py:
+
 `APPEND_SLASH=True`
+
 `DEBUG=False` if prod, `DEBUG=True` if dev.
+
 ```
 ALLOWED_HOSTS=[
     '127.0.0.1',
