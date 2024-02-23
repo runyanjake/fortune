@@ -1,0 +1,3 @@
+env/
+fortune/db.sqlite3
+fortune/fortune/__pycache__
